@@ -18,14 +18,21 @@ You can explore both services api documentation in the following url:
 
 Another way to explore this apis is by importing postman.json into your postman application, there are a lot of examples to follow along this cab application. Btw there are registries already imported into DB.
 
-## building
-First execute make to build spring boot microservices, once maven build finish then invoke docker-compose.
+## Building
+To improve speed of maven package when dependencies need to be resolved, we first need to package our projects outside the containers and then invoke the contaianer creation. 
+
+First execute "make" command to build spring boot microservices, once maven build is finished then invoke docker-compose:
 ```
-make &&
+make build &&
 docker-compose -f docker-compose up -d
 ```
 
-## usage
+To avoid writting two commands we can only invoke "make" command to Build and execute docker-compose up -d at once:
+```
+make 
+```
+
+## API usage
 
 Please refer to api-docs for advanced documentation and explanations, this is only a quick guide.
 
