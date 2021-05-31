@@ -55,6 +55,30 @@ services:
       - "db"
       - "kafka"
 
+  cab_gateway:
+    build:
+        context: ./gateway
+        dockerfile: DockerFile
+        target: outsidebuild
+    container_name: cab_gateway
+    links:
+      - cab_user
+      - cab
+    environment:
+      - CAB_ADDRESS=cab
+      - CAB_PORT=9080
+      - USER_PORT=9081
+      - USER_ADDRESS=cab_user
+    ports:
+      - 9001:9001
+    volumes:
+      - mym2:/root/.m2
+    networks:
+      - app-tier
+    depends_on:
+      - cab_user
+      - cab
+
   zookeeper:
     image: 'bitnami/zookeeper:3'
     container_name: zookeeper
