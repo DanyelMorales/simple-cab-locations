@@ -9,13 +9,16 @@ services:
     build:
         context: ./cab_test
         dockerfile: DockerFile
-        target: execution
+        target: execute
         args:
           KAFKA_HOST: kafka
           MYSQL_HOST: db
     container_name: cab
+    environment:
+      - KAFKA_HOST=kafka
+      - MYSQL_HOST=db
     ports:
-      - '9080:9080'
+      - 9080:9080
     networks:
       - app-tier
     links:
@@ -25,13 +28,13 @@ services:
       - mym2:/root/.m2
     depends_on:
       - "db"
-      - "cab_user"
+      - "kafka"
 
   cab_user:
     build:
         context: ./cab_user
         dockerfile: DockerFile
-        target: execution
+        target: execute
         args:
           KAFKA_HOST: kafka
           MYSQL_HOST: db
@@ -39,14 +42,18 @@ services:
     links:
       - db
       - kafka
+    environment:
+      - KAFKA_HOST=kafka
+      - MYSQL_HOST=db
     ports:
-      - '9081:9081'
+      - 9081:9081
     volumes:
       - mym2:/root/.m2
     networks:
       - app-tier
     depends_on:
       - "db"
+      - "kafka"
 
   zookeeper:
     image: 'bitnami/zookeeper:3'

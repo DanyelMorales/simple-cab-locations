@@ -19,9 +19,10 @@ You can explore both services api documentation in the following url:
 Another way to explore this apis is by importing postman.json into your postman application, there are a lot of examples to follow along this cab application. Btw there are registries already imported into DB.
 
 ## building
-
+First execute make to build spring boot microservices, once maven build finish then invoke docker-compose.
 ```
-export DOCKER_BUILDKIT=1; docker-compose -f docker-compose up -d
+make &&
+docker-compose -f docker-compose up -d
 ```
 
 ## usage
