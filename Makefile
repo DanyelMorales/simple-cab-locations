@@ -1,5 +1,6 @@
 all: build 
 	sudo docker-compose -f docker-compose up -d 
+	sudo docker stats
 	
 .PHONY:
 build:

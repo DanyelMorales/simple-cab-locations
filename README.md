@@ -140,3 +140,14 @@ http://localhost:9080/api/v1/cabs/locations/106?cabs=5
 ```
 
 Beware every time you update user's geo location you will get a new geo Id from response, this is the one used as reference.
+
+
+### API GATEWAY
+
+There exists a gateway where you can execute easily the requests:
+
+```
+http://localhost:9001/api/v1/cabs
+http://localhost:9001/api/v1/users
+```
+Endpoints are the same, just point them to port 9001.
