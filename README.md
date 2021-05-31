@@ -11,9 +11,14 @@ Cab drivers can send their location via a restful endpoint (it will send the req
 You can explore both services api documentation in the following url:
 
 ```
-0.0.0.0:8080/api-docs
+ui api-doc:
+http://0.0.0.0:9080/api/v1/swagger-ui/
+http://0.0.0.0:9081/api/v1/swagger-ui/
 
-0.0.0.0:8081/api-docs 
+Rest api-doc:
+0.0.0.0:8080/api/v1/api-docs
+0.0.0.0:8081/api/v1/api-docs
+
 ```
 
 Another way to explore this apis is by importing postman.json into your postman application, there are a lot of examples to follow along this cab application. Btw there are registries already imported into DB.
