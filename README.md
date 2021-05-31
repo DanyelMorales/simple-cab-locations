@@ -18,6 +18,12 @@ You can explore both services api documentation in the following url:
 
 Another way to explore this apis is by importing postman.json into your postman application, there are a lot of examples to follow along this cab application. Btw there are registries already imported into DB.
 
+## building
+
+```
+export DOCKER_BUILDKIT=1; docker-compose -f docker-compose up -d
+```
+
 ## usage
 
 Please refer to api-docs for advanced documentation and explanations, this is only a quick guide.

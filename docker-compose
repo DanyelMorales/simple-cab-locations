@@ -11,13 +11,18 @@ services:
         dockerfile: DockerFile
         target: execution
         args:
-          KAFKA_HOST: kafkaContainer
-          MYSQL_HOST: mysqlcontainer
+          KAFKA_HOST: kafka
+          MYSQL_HOST: db
     container_name: cab
     ports:
       - '9080:9080'
     networks:
       - app-tier
+    links:
+      - db
+      - kafka
+    volumes:
+      - mym2:/root/.m2
     depends_on:
       - "db"
       - "cab_user"
@@ -28,11 +33,16 @@ services:
         dockerfile: DockerFile
         target: execution
         args:
-          KAFKA_HOST: kafkaContainer
-          MYSQL_HOST: mysqlcontainer
+          KAFKA_HOST: kafka
+          MYSQL_HOST: db
     container_name: cab_user
+    links:
+      - db
+      - kafka
     ports:
       - '9081:9081'
+    volumes:
+      - mym2:/root/.m2
     networks:
       - app-tier
     depends_on:
@@ -100,7 +110,10 @@ services:
       - "kafka"
     links:
       - kafka
+    networks:
+      - app-tier
 
 # Names our volume
 volumes:
   my-db:
+  mym2:
