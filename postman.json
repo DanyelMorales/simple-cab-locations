@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "2c266d29-6fec-4dd6-aa65-69228477cbb2",
+		"name": "tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cab",
+			"item": [
+				{
+					"name": "Update geo location of user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"email\": \"customer@gmail.com\",\n      \"geoLocation\": \n          {\n            \"latitude\": 20.091388298968315,\n            \"longitude\": -98.80124459419224\n           }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:9081/api/v1/users/locations",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "9081",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update geo location of cab",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"driverId\": \"cab9@gmail.com\",\n     \"available\":true,\n      \"geoLocation\": \n          {\n            \"longitude\": 20.09511479751501,\n            \"latitude\":  -98.80315844989903\n           }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:9080/api/v1/cabs/locations",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"v1",
+								"cabs",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve geo location of user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9081/api/v1/users/customer@gmail.com/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"customer@gmail.com",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve geo location of cab",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9080/api/v1/cabs/cab2@gmail.com/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"v1",
+								"cabs",
+								"cab2@gmail.com",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve near cabs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9080/api/v1/cabs/locations/106?cabs=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"v1",
+								"cabs",
+								"locations",
+								"106"
+							],
+							"query": [
+								{
+									"key": "cabs",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve cabs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9080/api/v1/cabs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"v1",
+								"cabs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"email\":\"customer@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:9081/api/v1/users",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "9081",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new cab",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"driverId\":\"cab9@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:9080/api/v1/cabs",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"v1",
+								"cabs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

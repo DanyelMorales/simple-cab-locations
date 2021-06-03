@@ -1,0 +1,632 @@
+2021-05-31 00:29:27.934  INFO 4665 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 4665 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:29:27.936  INFO 4665 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:29:28.580  INFO 4665 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:29:29.062  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:29:29.062  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:29:29.063  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:29:29.064  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:29:29.064  INFO 4665 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:29:29.327  INFO 4665 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:29:29.409  INFO 4665 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.175 seconds (JVM running for 3.541)
+2021-05-31 00:29:29.410  INFO 4665 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:29:29.412  INFO 4665 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:30:39.240  INFO 5639 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 5639 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:30:39.243  INFO 5639 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:30:39.789  INFO 5639 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:30:40.290  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:30:40.291  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:30:40.292  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:30:40.292  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:30:40.292  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:30:40.292  INFO 5639 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:30:40.591  INFO 5639 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:30:40.696  INFO 5639 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.276 seconds (JVM running for 2.778)
+2021-05-31 00:30:40.698  INFO 5639 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:30:40.701  INFO 5639 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:31:47.036  INFO 5639 --- [SpringContextShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-31 00:31:52.583  INFO 7147 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 7147 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:31:52.588  INFO 7147 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:31:53.545  INFO 7147 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:31:54.129  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:31:54.129  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:31:54.129  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:31:54.129  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:31:54.129  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:31:54.130  INFO 7147 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:31:54.384  INFO 7147 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:31:54.514  INFO 7147 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.584 seconds (JVM running for 3.302)
+2021-05-31 00:31:54.515  INFO 7147 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:31:54.517  INFO 7147 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:37:11.423  INFO 11124 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 11124 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:37:11.450  INFO 11124 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:37:12.704  INFO 11124 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:37:13.367  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:37:13.367  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:37:13.367  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:37:13.368  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:37:13.368  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:37:13.369  INFO 11124 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:37:13.701  INFO 11124 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:37:13.790  INFO 11124 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 3.9 seconds (JVM running for 4.666)
+2021-05-31 00:37:13.792  INFO 11124 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:37:13.794  INFO 11124 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:39:02.764  INFO 11124 --- [SpringContextShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-31 00:39:08.415  INFO 12845 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 12845 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:39:08.427  INFO 12845 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:39:09.409  INFO 12845 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:39:10.049  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:39:10.049  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:39:10.049  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:39:10.049  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:39:10.049  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:39:10.050  INFO 12845 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:39:10.323  INFO 12845 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:39:10.607  INFO 12845 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.935 seconds (JVM running for 3.579)
+2021-05-31 00:39:10.608  INFO 12845 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:39:10.611  INFO 12845 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:39:45.361  INFO 13457 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 13457 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:39:45.370  INFO 13457 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:39:46.098  INFO 13457 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:39:46.658  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:39:46.659  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:39:46.660  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:39:46.660  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:39:46.660  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:39:46.660  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:39:46.660  INFO 13457 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:39:46.972  INFO 13457 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:39:47.023  INFO 13457 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.186 seconds (JVM running for 2.745)
+2021-05-31 00:39:47.025  INFO 13457 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:39:47.027  INFO 13457 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:54:54.941  INFO 26551 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 26551 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:54:54.943  INFO 26551 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:54:55.713  INFO 26551 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:54:55.887  WARN 26551 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "0.0.0.0:9080""/api/v1/cabs"
+2021-05-31 00:54:55.905  INFO 26551 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:54:55.925 ERROR 26551 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "0.0.0.0:9080""/api/v1/cabs"
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "0.0.0.0:9080""/api/v1/cabs"
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "0.0.0.0:9080""/api/v1/cabs"
+	at java.net.URI.create(URI.java:852) ~[na:1.8.0_272]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$0(GatewayApplication.java:36) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:34) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$1672afe3.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$1672afe3$$FastClassBySpringCGLIB$$7a48d574.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$1672afe3.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+Caused by: java.net.URISyntaxException: Illegal character in scheme name at index 0: "0.0.0.0:9080""/api/v1/cabs"
+	at java.net.URI$Parser.fail(URI.java:2874) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChars(URI.java:3047) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChar(URI.java:3057) ~[na:1.8.0_272]
+	at java.net.URI$Parser.parse(URI.java:3073) ~[na:1.8.0_272]
+	at java.net.URI.<init>(URI.java:588) ~[na:1.8.0_272]
+	at java.net.URI.create(URI.java:850) ~[na:1.8.0_272]
+	... 35 common frames omitted
+
+2021-05-31 00:55:31.153  INFO 26996 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 26996 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:55:31.156  INFO 26996 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:55:32.026  INFO 26996 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:55:32.196  WARN 26996 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "http://0.0.0.0:9080""/api/v1/cabs"
+2021-05-31 00:55:32.215  INFO 26996 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:55:32.234 ERROR 26996 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "http://0.0.0.0:9080""/api/v1/cabs"
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "http://0.0.0.0:9080""/api/v1/cabs"
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: "http://0.0.0.0:9080""/api/v1/cabs"
+	at java.net.URI.create(URI.java:852) ~[na:1.8.0_272]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$0(GatewayApplication.java:36) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:34) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69$$FastClassBySpringCGLIB$$b081f767.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+Caused by: java.net.URISyntaxException: Illegal character in scheme name at index 0: "http://0.0.0.0:9080""/api/v1/cabs"
+	at java.net.URI$Parser.fail(URI.java:2874) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChars(URI.java:3047) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChar(URI.java:3057) ~[na:1.8.0_272]
+	at java.net.URI$Parser.parse(URI.java:3073) ~[na:1.8.0_272]
+	at java.net.URI.<init>(URI.java:588) ~[na:1.8.0_272]
+	at java.net.URI.create(URI.java:850) ~[na:1.8.0_272]
+	... 35 common frames omitted
+
+2021-05-31 00:55:58.043  INFO 27438 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 27438 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:55:58.046  INFO 27438 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:55:58.820  INFO 27438 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:55:58.985  WARN 27438 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+2021-05-31 00:55:59.004  INFO 27438 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:55:59.021 ERROR 27438 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at java.net.URI.create(URI.java:852) ~[na:1.8.0_272]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$0(GatewayApplication.java:36) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:34) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$4fcdb7f0.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$4fcdb7f0$$FastClassBySpringCGLIB$$eaed0ed3.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$4fcdb7f0.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+Caused by: java.net.URISyntaxException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at java.net.URI$Parser.fail(URI.java:2874) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChars(URI.java:3047) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChar(URI.java:3057) ~[na:1.8.0_272]
+	at java.net.URI$Parser.parse(URI.java:3073) ~[na:1.8.0_272]
+	at java.net.URI.<init>(URI.java:588) ~[na:1.8.0_272]
+	at java.net.URI.create(URI.java:850) ~[na:1.8.0_272]
+	... 35 common frames omitted
+
+2021-05-31 00:56:33.049  INFO 27885 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 27885 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:56:33.053  INFO 27885 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:56:33.791  INFO 27885 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:56:33.958  WARN 27885 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+2021-05-31 00:56:33.977  INFO 27885 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:56:33.994 ERROR 27885 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at java.net.URI.create(URI.java:852) ~[na:1.8.0_272]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$0(GatewayApplication.java:36) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:34) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69$$FastClassBySpringCGLIB$$b081f767.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+Caused by: java.net.URISyntaxException: Illegal character in scheme name at index 0: 0.0.0.0:9080/api/v1/cabs
+	at java.net.URI$Parser.fail(URI.java:2874) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChars(URI.java:3047) ~[na:1.8.0_272]
+	at java.net.URI$Parser.checkChar(URI.java:3057) ~[na:1.8.0_272]
+	at java.net.URI$Parser.parse(URI.java:3073) ~[na:1.8.0_272]
+	at java.net.URI.<init>(URI.java:588) ~[na:1.8.0_272]
+	at java.net.URI.create(URI.java:850) ~[na:1.8.0_272]
+	... 35 common frames omitted
+
+2021-05-31 00:57:16.170  INFO 28706 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 28706 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:57:16.173  INFO 28706 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:57:16.972  INFO 28706 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:57:17.171  WARN 28706 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/cabs] format is incorrect, scheme can not be empty
+2021-05-31 00:57:17.203  INFO 28706 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:57:17.220 ERROR 28706 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/cabs] format is incorrect, scheme can not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/cabs] format is incorrect, scheme can not be empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/cabs] format is incorrect, scheme can not be empty
+	at org.springframework.util.Assert.hasText(Assert.java:289) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:189) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$0(GatewayApplication.java:36) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:34) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69$$FastClassBySpringCGLIB$$b081f767.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$6abf1e69.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+
+2021-05-31 00:58:04.143  INFO 29157 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 29157 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:58:04.156  INFO 29157 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:58:04.994  INFO 29157 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:58:05.227  WARN 29157 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+2021-05-31 00:58:05.256  INFO 29157 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:58:05.275 ERROR 29157 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+	at org.springframework.util.Assert.hasText(Assert.java:289) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:189) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$1(GatewayApplication.java:40) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:38) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$1672afe3.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$1672afe3$$FastClassBySpringCGLIB$$7a48d574.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$1672afe3.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+
+2021-05-31 00:58:26.966  INFO 29600 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 29600 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:58:26.982  INFO 29600 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:58:27.782  INFO 29600 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:58:27.957  WARN 29600 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+2021-05-31 00:58:27.977  INFO 29600 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-31 00:58:27.997 ERROR 29600 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cabRoutes' defined in com.awesome.cab.gateway.GatewayApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.7.jar:5.3.7]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336) [spring-boot-2.5.0.jar:2.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325) [spring-boot-2.5.0.jar:2.5.0]
+	at com.awesome.cab.gateway.GatewayApplication.main(GatewayApplication.java:14) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'cabRoutes' threw exception; nested exception is java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.7.jar:5.3.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The parameter [0.0.0.0/api/v1/users] format is incorrect, scheme can not be empty
+	at org.springframework.util.Assert.hasText(Assert.java:289) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:189) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.Route$AbstractBuilder.uri(Route.java:183) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at org.springframework.cloud.gateway.route.builder.UriSpec.uri(UriSpec.java:65) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.lambda$cabRoutes$1(GatewayApplication.java:40) [classes/:na]
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:82) ~[spring-cloud-gateway-server-3.0.4-20210531.022959-11.jar:3.0.4-SNAPSHOT]
+	at com.awesome.cab.gateway.GatewayApplication.cabRoutes(GatewayApplication.java:38) [classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$da001a5d.CGLIB$cabRoutes$0(<generated>) ~[classes/:na]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$da001a5d$$FastClassBySpringCGLIB$$2acb43d.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.7.jar:5.3.7]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.7.jar:5.3.7]
+	at com.awesome.cab.gateway.GatewayApplication$$EnhancerBySpringCGLIB$$da001a5d.cabRoutes(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_272]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_272]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.7.jar:5.3.7]
+	... 20 common frames omitted
+
+2021-05-31 00:58:49.167  INFO 30028 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 30028 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 00:58:49.170  INFO 30028 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 00:58:49.953  INFO 30028 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 00:58:50.411  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 00:58:50.412  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 00:58:50.413  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 00:58:50.413  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 00:58:50.413  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 00:58:50.413  INFO 30028 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 00:58:50.652  INFO 30028 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 00:58:50.771  INFO 30028 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.109 seconds (JVM running for 2.782)
+2021-05-31 00:58:50.773  INFO 30028 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 00:58:50.776  INFO 30028 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 00:58:59.659 ERROR 30028 --- [reactor-http-epoll-1] a.w.r.e.AbstractErrorWebExceptionHandler : [f98bfcdf-1]  500 Server Error for HTTP GET "/api/v1/cabs"
+
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /0.0.0.0:80
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ HTTP GET "/api/v1/cabs" [ExceptionHandlingWebHandler]
+Stack trace:
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:155) ~[netty-transport-native-unix-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:128) ~[netty-transport-native-unix-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:278) ~[netty-transport-native-unix-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:710) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:687) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:470) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.65.Final.jar:4.1.65.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_272]
+
+2021-05-31 01:00:27.942  INFO 31322 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 31322 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 01:00:27.944  INFO 31322 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 01:00:28.626  INFO 31322 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 01:00:29.114  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 01:00:29.114  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 01:00:29.115  INFO 31322 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 01:00:29.359  INFO 31322 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 01:00:29.506  INFO 31322 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.152 seconds (JVM running for 2.725)
+2021-05-31 01:00:29.508  INFO 31322 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 01:00:29.511  INFO 31322 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 01:00:33.774 ERROR 31322 --- [reactor-http-epoll-1] a.w.r.e.AbstractErrorWebExceptionHandler : [2cfb19a6-1]  500 Server Error for HTTP GET "/api/v1/cabs"
+
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /0.0.0.0:80
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ HTTP GET "/api/v1/cabs" [ExceptionHandlingWebHandler]
+Stack trace:
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:155) ~[netty-transport-native-unix-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:128) ~[netty-transport-native-unix-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:278) ~[netty-transport-native-unix-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:710) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:687) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:470) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378) ~[netty-transport-native-epoll-4.1.65.Final-linux-x86_64.jar:4.1.65.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.65.Final.jar:4.1.65.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.65.Final.jar:4.1.65.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_272]
+
+2021-05-31 01:02:06.572  INFO 32629 --- [main] c.a.cab.gateway.GatewayApplication       : Starting GatewayApplication using Java 1.8.0_272 on canela with PID 32629 (/home/d4p50n/projects/my_awesome_cab/gateway/target/classes started by d4p50n in /home/d4p50n/projects/my_awesome_cab/cab_test)
+2021-05-31 01:02:06.593  INFO 32629 --- [main] c.a.cab.gateway.GatewayApplication       : No active profile set, falling back to default profiles: default
+2021-05-31 01:02:07.299  INFO 32629 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3278572c-044e-3a1d-9a1a-9e620beb21f7
+2021-05-31 01:02:07.733  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-31 01:02:07.734  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-31 01:02:07.735  INFO 32629 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-31 01:02:08.039  INFO 32629 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9001
+2021-05-31 01:02:08.144  INFO 32629 --- [main] c.a.cab.gateway.GatewayApplication       : Started GatewayApplication in 2.181 seconds (JVM running for 2.751)
+2021-05-31 01:02:08.146  INFO 32629 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 01:02:08.147  INFO 32629 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
