@@ -1,56 +1,32 @@
 package com.awesome.cab.cab.controller;
 
-import com.awesome.cab.cab.CabRunner;
 import com.awesome.cab.cab.model.Cab;
-import com.awesome.cab.cab.model.CabHelper;
 import com.awesome.cab.cab.model.GeoLocation;
-import com.awesome.cab.cab.model.repository.CabRepository;
-import com.awesome.cab.cab.model.repository.GeoLocationRepository;
-import com.awesome.cab.cab.tracker.GpsHelper;
-import com.awesome.cab.cab.tracker.GpsProvider;
+import com.awesome.cab.cab.service.CabService;
+import com.awesome.cab.cab.service.Streaming;
 import com.sun.istack.NotNull;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.hateoas.mediatype.problem.Problem;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("cabs")
 public class CabController {
-    @Value("${docker.kafka.topic}")
-    private String cabTopic;
 
     @Autowired
-    private GeoLocationRepository geoRepo;
-    @Autowired
-    private CabRepository cabRepo;
-
+    private Streaming streaming;
 
     @Autowired
-    private CabHelper cabHelper;
-
-    @Autowired
-    private KafkaTemplate<String, Cab> kafkaTemplate;
+    private CabService cabService;
 
     @Operation(summary = "Create a cab driver")
     @ApiResponses(value = {
@@ -63,7 +39,7 @@ public class CabController {
     @PostMapping()
     public @ResponseBody
     Cab createCabDriver(@NotNull @RequestBody Cab cab) {
-        return cabRepo.save(cab);
+        return this.cabService.createCabDriver(cab);
     }
 
     @Operation(summary = "List all cabs")
@@ -76,9 +52,11 @@ public class CabController {
     @GetMapping()
     public @ResponseBody
     ResponseEntity showCabs() {
-        ArrayList<Cab> cabs = new ArrayList<>();
-        cabRepo.findAll().forEach(x -> cabs.add(x));
-        return ResponseEntity.status(HttpStatus.OK).body(cabs);
+        Optional<List<Cab>> opts = this.cabService.showCabs();
+        if (opts.isPresent()) {
+            return ResponseEntity.status(HttpStatus.OK).body(opts.get());
+        }
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
     @Operation(summary = "Get current location of cab by its email")
@@ -91,13 +69,11 @@ public class CabController {
     @GetMapping(path = "{email}/locations")
     public @ResponseBody
     ResponseEntity fetchLocations(@PathVariable("email") String id) {
-        GeoLocation r = cabRepo.findGeoLocationByQuery(id);
-        if (r == null) {
-            CabRunner.LOG.debug("no cab with id " + id);
+        Optional<GeoLocation> locations = this.cabService.fetchCabLocation(id);
+        if (!locations.isPresent()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
-        CabRunner.LOG.info("awesome, responding locations");
-        return ResponseEntity.status(HttpStatus.OK).body(r);
+        return ResponseEntity.status(HttpStatus.OK).body(locations.get());
     }
 
     @Operation(summary = "Update cab location via kafka")
@@ -105,16 +81,12 @@ public class CabController {
             @ApiResponse(responseCode = "200", description = "fire and forget")})
     @PutMapping(path = "locations")
     public @ResponseBody
-    ResponseEntity updateLocation(@NotNull @RequestBody Cab cabPayload) {
-        ProducerRecord<String, Cab> producerRecord = new ProducerRecord<>(cabTopic, cabPayload);
-        producerRecord.headers().add("eventName", "CAB-LOCAION".getBytes(StandardCharsets.UTF_8));
-        producerRecord.headers().add("timestamp", new Date().toString().getBytes(StandardCharsets.UTF_8));
-        producerRecord.headers().add("eventID", "3b719a3a-bc3f-43a8-b311-94754a3a4d95".getBytes(StandardCharsets.UTF_8));
-        kafkaTemplate.send(producerRecord);
-        return ResponseEntity.status(HttpStatus.OK).build();
+    ResponseEntity updateLocation(@NotNull @RequestBody Cab cabPayload, @RequestParam(value = "available", defaultValue = "true") boolean isAvailable) {
+        String eventId = this.streaming.communicateLocation(cabPayload, isAvailable);
+        return ResponseEntity.status(HttpStatus.OK).body(eventId);
     }
 
-    @Operation(summary = "Find n near cabs near to you")
+    @Operation(summary = "Find cabs near to reference point")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Found a list of cabs",
                     content = {@Content(mediaType = "application/json",
@@ -125,11 +97,11 @@ public class CabController {
     public @ResponseBody
     ResponseEntity fetchLocations(@PathVariable("locationId") Long locationId,
                                   @RequestParam(value = "cabs", defaultValue = "1") int cabs) {
-        List<Cab> result = cabHelper.findGeoLocation(locationId, cabs);
-        if (result == null || result.isEmpty()) {
+        Optional<List<Cab>> result = this.cabService.findLocationsNearTo(locationId, cabs);
+        if (!result.isPresent()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("no free cabs near to you, try later.");
         }
-        return ResponseEntity.status(HttpStatus.OK).body(result);
+        return ResponseEntity.status(HttpStatus.OK).body(result.get());
     }
 
 

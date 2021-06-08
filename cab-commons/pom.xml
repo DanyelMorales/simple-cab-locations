@@ -9,11 +9,11 @@
 		<relativePath/>
 		<!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.awesome.com.awesome.cab.cab</groupId>
-	<artifactId>cab-user</artifactId>
+	<groupId>com.awesome.cab</groupId>
+	<artifactId>cab-commons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>com.awesome.cab.cab-user</name>
-	<description>com.awesome.cab.cab user project</description>
+	<name>com.awesome.cab.cab</name>
+	<description>common utils</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -59,12 +59,8 @@
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.5.2</version>
 		</dependency>
-		<dependency>
-			<groupId>com.awesome.cab</groupId>
-			<artifactId>cab-commons</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>

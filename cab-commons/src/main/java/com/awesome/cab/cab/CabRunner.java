@@ -7,14 +7,15 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CabUserRunner implements ApplicationRunner {
+public class CabRunner implements ApplicationRunner {
     public static final Logger LOG =
-            LoggerFactory.getLogger(CabUserRunner.class);
+            LoggerFactory.getLogger(CabRunner.class);
 
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
 
     }
+
 
 }
