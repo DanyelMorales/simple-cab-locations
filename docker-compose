@@ -10,20 +10,14 @@ services:
         context: ./cab_test
         dockerfile: DockerFile
         target: outsidebuild
-        args:
-          KAFKA_HOST: kafka
-          MYSQL_HOST: db
     container_name: cab
     environment:
-      - KAFKA_HOST=kafka
-      - MYSQL_HOST=db
+      - DOCKER_KAFKA_SERVER=://kafkaContainer:9092
+      - MYSQL_HOST=mysqlcontainer
     ports:
       - 9080:9080
     networks:
       - app-tier
-    links:
-      - db
-      - kafka
     volumes:
       - mym2:/root/.m2
     depends_on:
@@ -35,16 +29,10 @@ services:
         context: ./cab_user
         dockerfile: DockerFile
         target: outsidebuild
-        args:
-          KAFKA_HOST: kafka
-          MYSQL_HOST: db
-    container_name: cab_user
-    links:
-      - db
-      - kafka
+    container_name: cabuser
     environment:
-      - KAFKA_HOST=kafka
-      - MYSQL_HOST=db
+      - KAFKA_HOST=://kafkaContainer:9092
+      - MYSQL_HOST=mysqlcontainer
     ports:
       - 9081:9081
     volumes:
@@ -61,14 +49,11 @@ services:
         dockerfile: DockerFile
         target: outsidebuild
     container_name: cab_gateway
-    links:
-      - cab_user
-      - cab
     environment:
       - CAB_ADDRESS=cab
       - CAB_PORT=9080
       - USER_PORT=9081
-      - USER_ADDRESS=cab_user
+      - USER_ADDRESS=cabuser
     ports:
       - 9001:9001
     volumes:
@@ -76,8 +61,8 @@ services:
     networks:
       - app-tier
     depends_on:
-      - cab_user
-      - cab
+      - "cab_user"
+      - "cab"
 
   zookeeper:
     image: 'bitnami/zookeeper:3'
@@ -99,7 +84,7 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
       - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       - KAFKA_CFG_LISTENERS=PLAINTEXT://kafkaContainer:29092,PLAINTEXT_HOST://kafkaContainer:9092
-      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafkaContainer:29092,PLAINTEXT_HOST://localhost:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafkaContainer:29092,PLAINTEXT_HOST://kafkaContainer:9092
       - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
       - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
     depends_on:

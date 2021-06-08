@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\n     \"email\": \"customer@gmail.com\",\n      \"geoLocation\": \n          {\n            \"latitude\": 20.091388298968315,\n            \"longitude\": -98.80124459419224\n           }\n}",
+							"raw": " {\n     \"email\": \"customer22@gmail.com\",\n      \"geoLocation\": \n          {\n            \"latitude\": 20.091388298968315,\n            \"longitude\": -98.80124459419224\n           }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,14 +23,14 @@
 							}
 						},
 						"url": {
-							"raw": "0.0.0.0:9081/api/v1/users/locations",
+							"raw": "0.0.0.0:9001/api/v1/users/locations",
 							"host": [
 								"0",
 								"0",
 								"0",
 								"0"
 							],
-							"port": "9081",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
@@ -48,7 +48,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\n     \"driverId\": \"cab9@gmail.com\",\n     \"available\":true,\n      \"geoLocation\": \n          {\n            \"longitude\": 20.09511479751501,\n            \"latitude\":  -98.80315844989903\n           }\n}",
+							"raw": " {\n     \"driverId\": \"cab19@gmail.com\",\n     \"available\":true,\n      \"geoLocation\": \n          {\n            \"longitude\": 22.09511479751501,\n            \"latitude\":  -98.80315844989903\n           }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -56,19 +56,20 @@
 							}
 						},
 						"url": {
-							"raw": "0.0.0.0:9080/api/v1/cabs/locations",
+							"raw": "0.0.0.0:9001/api/v1/cabs/locations/",
 							"host": [
 								"0",
 								"0",
 								"0",
 								"0"
 							],
-							"port": "9080",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
 								"cabs",
-								"locations"
+								"locations",
+								""
 							]
 						}
 					},
@@ -80,12 +81,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9081/api/v1/users/customer@gmail.com/locations",
+							"raw": "http://localhost:9001/api/v1/users/customer@gmail.com/locations",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9081",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
@@ -103,12 +104,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9080/api/v1/cabs/cab2@gmail.com/locations",
+							"raw": "http://localhost:9001/api/v1/cabs/cab2@gmail.com/locations",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9080",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
@@ -126,12 +127,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9080/api/v1/cabs/locations/106?cabs=5",
+							"raw": "http://localhost:9001/api/v1/cabs/locations/106?cabs=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9080",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
@@ -150,17 +151,41 @@
 					"response": []
 				},
 				{
+					"name": "Retrieve near cabs gtw",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/api/v1/cabs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"v1",
+								"cabs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Retrieve cabs",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9080/api/v1/cabs",
+							"raw": "http://0.0.0.0:9001/api/v1/cabs",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"0",
+								"0",
+								"0",
+								"0"
 							],
-							"port": "9080",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
@@ -177,7 +202,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\n     \"email\":\"customer@gmail.com\"\n}",
+							"raw": " {\n     \"email\":\"sasasas@gmail.com\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -185,14 +210,14 @@
 							}
 						},
 						"url": {
-							"raw": "0.0.0.0:9081/api/v1/users",
+							"raw": "0.0.0.0:9001/api/v1/users",
 							"host": [
 								"0",
 								"0",
 								"0",
 								"0"
 							],
-							"port": "9081",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",
@@ -209,7 +234,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\n     \"driverId\":\"cab9@gmail.com\"\n}",
+							"raw": " {\n     \"driverId\":\"cab11239@gmail.com\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -217,14 +242,14 @@
 							}
 						},
 						"url": {
-							"raw": "0.0.0.0:9080/api/v1/cabs",
+							"raw": "0.0.0.0:9001/api/v1/cabs",
 							"host": [
 								"0",
 								"0",
 								"0",
 								"0"
 							],
-							"port": "9080",
+							"port": "9001",
 							"path": [
 								"api",
 								"v1",

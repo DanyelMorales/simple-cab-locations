@@ -61,7 +61,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.awesome.cab</groupId>
-			<artifactId>cab-commons</artifactId>
+			<artifactId>commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

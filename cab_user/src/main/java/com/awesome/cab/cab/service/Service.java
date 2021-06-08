@@ -1,10 +1,10 @@
 package com.awesome.cab.cab.service;
 
 import com.awesome.cab.cab.CabUserRunner;
-import com.awesome.cab.cab.model.GeoLocation;
-import com.awesome.cab.cab.model.User;
-import com.awesome.cab.cab.model.repository.GeoLocationRepository;
-import com.awesome.cab.cab.model.repository.UserRepository;
+import com.awesome.cab.commons.model.GeoLocation;
+import com.awesome.cab.commons.model.User;
+import com.awesome.cab.commons.model.repository.GeoLocationRepository;
+import com.awesome.cab.commons.model.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Optional;

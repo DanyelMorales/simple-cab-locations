@@ -4,7 +4,12 @@ all: build
 	
 .PHONY:
 build:
-	mvn -f ./cab-commons install -DskipTests
-	mvn -f ./cab_test package -DskipTests
-	mvn -f ./cab_user package -DskipTests
-	mvn -f ./gateway package -DskipTests
+	mvn -f ./cab-commons clean install -DskipTests
+	mvn -f ./cab_test clean package -DskipTests
+	mvn -f ./cab_user clean package -DskipTests
+	mvn -f ./gateway clean package -DskipTests
+
+.PHONY:
+clean:
+	sudo docker-compose -f docker-compose down; 
+	sudo docker image rm myawesomecab_cab_gateway myawesomecab_cab_user myawesomecab_cab;

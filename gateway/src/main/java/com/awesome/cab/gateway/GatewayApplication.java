@@ -16,7 +16,7 @@ public class GatewayApplication {
 
 
     @Value("${server.servlet.context-path}")
-    private String gtwBase;
+    private String apiVersionBase;
 
     @Value("${routes.cabs.host}")
     private String cabAddr;
@@ -35,12 +35,23 @@ public class GatewayApplication {
     @Bean
     public RouteLocator cabRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(p -> p
-                        .path(gtwBase + "/cabs/**")
+                .route("a", p -> p
+                        .method("GET", "PUT", "POST")
+                        .and()
+                        .path(apiVersionBase + "/cabs/**")
                         .uri(cabAddr + ":" + cabPort + cabBase)
-                )
-                .route(p -> p
-                        .path(gtwBase + "/users/**")
+                ).route("b", p -> p
+                        .method("GET", "PUT", "POST").and()
+                        .path(apiVersionBase + "/docs/cabs/**")
+                        .uri(cabAddr + ":" + cabPort + apiVersionBase + "/swagger-ui.html")
+                ).route("c", p -> p
+                        .method("GET", "PUT", "POST").and()
+                        .path(apiVersionBase + "/docs/users/**")
+                        .uri(userAddr + ":" + userPort + apiVersionBase + "/swagger-ui.html")
+                ).route("d", p -> p
+                        .method("GET", "PUT", "POST")
+                        .and()
+                        .path(apiVersionBase + "/users/**")
                         .uri(userAddr + ":" + userPort + userBase)
                 )
                 .build();

@@ -1,7 +1,7 @@
 package com.awesome.cab.cab;
 
-import com.awesome.cab.cab.model.Cab;
-import com.awesome.cab.cab.model.CabHelper;
+import com.awesome.cab.commons.model.Cab;
+import com.awesome.cab.commons.model.CabHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +20,10 @@ public class CabRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-
+        LOG.info("running");
     }
 
-    @KafkaListener(topics = "cab_location", groupId = "12")
+    @KafkaListener(topics = "cab_location")
     public void listenGroupFoo(Cab cabPayload) {
         LOG.info("received cab payload");
         Cab cab = this.cabHelper.updateLocation(cabPayload);

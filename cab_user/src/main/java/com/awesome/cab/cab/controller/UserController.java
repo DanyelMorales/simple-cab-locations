@@ -1,7 +1,7 @@
 package com.awesome.cab.cab.controller;
 
-import com.awesome.cab.cab.model.GeoLocation;
-import com.awesome.cab.cab.model.User;
+import com.awesome.cab.commons.model.GeoLocation;
+import com.awesome.cab.commons.model.User;
 import com.awesome.cab.cab.service.Service;
 import com.sun.istack.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;

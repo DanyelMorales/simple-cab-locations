@@ -1,10 +1,10 @@
 package com.awesome.cab.cab.service;
 
 import com.awesome.cab.cab.CabRunner;
-import com.awesome.cab.cab.model.Cab;
-import com.awesome.cab.cab.model.CabHelper;
-import com.awesome.cab.cab.model.GeoLocation;
-import com.awesome.cab.cab.model.repository.CabRepository;
+import com.awesome.cab.commons.model.Cab;
+import com.awesome.cab.commons.model.CabHelper;
+import com.awesome.cab.commons.model.GeoLocation;
+import com.awesome.cab.commons.model.repository.CabRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 

@@ -1,9 +1,9 @@
 package com.awesome.cab.cab.controller;
 
-import com.awesome.cab.cab.model.Cab;
-import com.awesome.cab.cab.model.GeoLocation;
+import com.awesome.cab.commons.model.Cab;
+import com.awesome.cab.commons.model.GeoLocation;
 import com.awesome.cab.cab.service.CabService;
-import com.awesome.cab.cab.service.Streaming;
+import com.awesome.cab.commons.service.Streaming;
 import com.sun.istack.NotNull;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
